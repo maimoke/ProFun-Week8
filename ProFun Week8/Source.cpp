@@ -2,7 +2,16 @@
 int main()
 {
 	int num[2][2];
-	scanf_s("%d %d %d %d",&num[0][0],&num[0][1],&num[1][0],&num[1][1]);
-	printf("%d %d\n%d %d", num[0][0], num[0][1], num[1][0], num[1][1]);
+	for (int i = 0; i <= 1; i++)
+	{
+		for (int j = 0; j <= 1; j++)
+			scanf_s("%d", &num[i][j]);
+	}
+	for (int i = 0; i <= 1; i++)
+	{
+		for (int j = 0; j <= 1; j++)
+			printf("%d ",num[i][j]);
+		printf("\n");
+	}
 	return 0;
 }
